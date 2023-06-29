@@ -1,3 +1,7 @@
+## Explanation Video
+I've recorded a 11-minute video for you to have a better understanding of my work. Please have a look  
+https://www.loom.com/share/4b44e46a8a7849d4a1b24d9c13d4b2c0?sid=45cc0cf8-18cf-4b51-855a-0f107a3f7955
+ 
 ## PROBLEM 1
 Palindrome String DEFINITION:
 A string is a palindrome if the string read from left to right
