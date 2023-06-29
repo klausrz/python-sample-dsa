@@ -3,13 +3,13 @@ I've recorded a 11-minute video for you to have a better understanding of my wor
 https://www.loom.com/share/4b44e46a8a7849d4a1b24d9c13d4b2c0?sid=45cc0cf8-18cf-4b51-855a-0f107a3f7955
  
 ## PROBLEM 1
-Palindrome String DEFINITION:
+__Palindrome String DEFINITION:__  
 A string is a palindrome if the string read from left to right
 is equal to the string read from right to left, IGNORING the 
 difference between uppercase and lowercase letter, and EXCLUDE
 all non-alphanumeric characters
 
-APPROACH:
+__APPROACH:__
 We'll be using two pointers, each starts at each end of the string
 At each iteration, the pointers move towards the opposite direction
 until they meet at the middle of the string
@@ -21,13 +21,13 @@ alphanumeric, they will be converted to lowercase before being compared.
 In case of equal, move both pointers one step to left and right. In case of 
 not equal, the string is not a Palindrome
 
-The loop stops when the "start" pointer is greater than the "end" pointer
+The loop stops when the "start" pointer is greater than the "end" pointer.  
 At this time, we can conclude that the string is a Palindrome
 
 I'm using Python as it is my favourite programing language
 for solving Data Structure and Algorithm problems
 
-## PROBLEM 2
+## PROBLEM 3
 
 #### Questions I would ask the shop manager:
 
