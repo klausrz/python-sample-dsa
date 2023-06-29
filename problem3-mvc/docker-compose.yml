@@ -1,0 +1,43 @@
+version: "3.2"
+services:
+  backend:
+    image: node:20-alpine
+    ports:
+      - 3001:3001
+    # links:
+    #   - mongo
+    environment:
+      - NODE_ENV=development
+     
+      - MONGO_USERNAME=chatbotuser
+      - MONGO_PASSWORD=changeit
+      - MONGO_HOST=mongo
+      - MONGO_PORT=27017
+      - MONGO_DBNAME=chatbot
+      
+    volumes:
+      - ./:/app
+    working_dir: /app
+    # stdin_open: true
+    # tty: true
+    # command: npm --prefix ./backend run start:watch
+    command: npm run start:watch
+
+
+  # mongo:
+  #   image: bitnami/mongodb:5.0.18
+  #   restart: on-failure
+  #   ports:
+  #     - 27017:27017
+  #   environment:
+  #     MONGODB_ROOT_PASSWORD: changeit
+  #     MONGODB_USERNAME: chatbotuser
+  #     MONGODB_PASSWORD: changeit
+  #     MONGODB_DATABASE: chatbot
+  #   volumes:
+  #     - ./mongodata:/bitnami/mongodb
+  #     # - ./backend/scripts/mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh:ro
+
+ 
+
+
