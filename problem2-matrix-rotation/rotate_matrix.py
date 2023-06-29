@@ -3,6 +3,10 @@ def rotateMatrix(matrix : list[list[int]]) -> list[list[int]]:
   if n == 0:
     return []
 
+  # the input is not a n_by_n matrix
+  if not len(matrix[0]) == n:
+    return False
+
   # init n x n matrix and fill with None
   rotated = [[None] * n for _ in range(n)]
   for i in range(n):
