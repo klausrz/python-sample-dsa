@@ -1,8 +1,3 @@
-def printArray(a: list[list[int]]) :
-  size = len(a)
-  for i in range(size):
-    print(a[i])
-
 def rotateMatrix(matrix : list[list[int]]) -> list[list[int]]:
   n = len(matrix)
   if n == 0:
