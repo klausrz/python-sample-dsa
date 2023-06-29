@@ -9,7 +9,7 @@ is equal to the string read from right to left, IGNORING the
 difference between uppercase and lowercase letter, and EXCLUDE
 all non-alphanumeric characters
 
-__APPROACH:__
+__APPROACH:__  
 We'll be using two pointers, each starts at each end of the string
 At each iteration, the pointers move towards the opposite direction
 until they meet at the middle of the string
@@ -26,6 +26,14 @@ At this time, we can conclude that the string is a Palindrome
 
 I'm using Python as it is my favourite programing language
 for solving Data Structure and Algorithm problems
+
+## PROBLEM 2
+__APPROACH:__  
+The approach is to use two nested loops to iterate through all elements of the matrix. At each iteration, an element of the matrix will be rotated using the following formular:  
+```
+rotated[i][j] = input[j][n - 1 - i]
+```
+
 
 ## PROBLEM 3
 
