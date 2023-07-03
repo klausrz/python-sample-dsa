@@ -24,10 +24,11 @@
 
 def isPalindrome(s: str)  -> bool :
   length = len(s)
-  if length == 1:
-    return True
+  if length == 0:
+    return False
+
   first, last = 0, length - 1
-  while first < last and first < length - 1 and last >= 0:
+  while first <= last and first <= length - 1 and last >= 0:
     # only check alpha numeric characters, ignore others
     while first < length and not s[first].isalnum() :
       first += 1
@@ -36,7 +37,7 @@ def isPalindrome(s: str)  -> bool :
 
     # there's no alpha numeric characters
     if first > length or last < 0 : 
-      return True
+      return False
     
     if not s[first].lower() == s[last].lower():
       return False

@@ -10,6 +10,9 @@ export class HomeController
       const connection = await MySqlDataSource.connect()
       const { manufacturer_id, model_id, imei, memory, manufacture_year, os_version, body_color,  price } = req.body;
 
+      // begin a transaction 
+      // additional check
+
       // I'm not using any libraries for validation as the validation rules are simple
       // Validate required fields
       if (!manufacturer_id || !model_id || !imei || !memory || !manufacture_year || !os_version) {
@@ -30,6 +33,8 @@ export class HomeController
       // Store the phone in the MySQL database
       await connection.query('INSERT INTO phones SET ?', phone)
       return res.status(201).json({ message: 'Phone stored successfully' })
+
+      // end transaction 
 
     } catch (error: any) {
       console.error('Error storing phone');

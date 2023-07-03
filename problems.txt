@@ -1,0 +1,64 @@
+Palindrome string
+
+1-a. Write a method that determines whether or not the given string is a palindrome. Method should take a string as an argument, and should return a boolean value.
+
+1-b. Write unit tests that examines the functionality of the implementation.
+
+1-c. Calculate the time cost of your implementation using the O-notation.
+
+--------------
+Matrix rotation
+2-a Write unit tests that examines the functionality of a method that takes an n-by-n matrix, and rotates it 90-degrees counter-clockwise.
+
+2-b. Write the implementation that satisfies the test cases.
+
+1 2 3 
+4 5 6
+7 8 9
+
+7 4 1
+8 5 2
+9 6 3
+
+3 6 9 
+2 5 8
+1 4 7
+
+
+b[0][0] = a[0][2]
+b[0][1] = a[1][2]
+b[0][2] = a[2][2]
+
+b[1][0] = a[0][1]
+b[1][1] = a[1][1]
+b[1][2] = a[2][1]
+
+b[2][0] = a[0][0]
+b[2][1] = a[1][0]
+b[2][2] = a[2][0]
+
+a[i][j] = a[j][n-i]
+
+1  2  3  4
+5  6  7  8
+9  10 11 12
+13 14 15 16
+
+4  8  12  16
+3  7  11  15
+2  6  10  14
+1  5  9  13
+
+
+--------------
+MVC
+You’re helping a manager of a SIM free used-smartphones shop. He wants to build a website for his customers. Given a user story, “The manager can register the inventory,” answer the following questions:
+
+3-a. Design ERD of RDBMS that describes a used-smartphone with the following properties: manufacturer(Apple, Samsung..), model(iPhone X..), the data memory, the year of manufacture, OS version, body-color, and price.
+
+3-b. Draw the wireframe for the input form.
+
+3-c. Write a server-side POST request-handler to register a smartphone.
+
+3-d. What would be your first three questions you’d like to ask if you were interviewing the shop manager?
+

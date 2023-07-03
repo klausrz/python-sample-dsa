@@ -6,19 +6,25 @@ class TestPalindrome(unittest.TestCase):
     self.assertTrue(isPalindrome("1"))
   
   def test_non_alphanumeric(self):
-    self.assertTrue(isPalindrome("**$$**)()#"))
+    self.assertFalse(isPalindrome("**$$**)()#"))
 
   def test_not_palindrome_string(self):
     self.assertFalse(isPalindrome("nopalindrome"))
 
   def test_empty_string(self):
-    self.assertTrue(isPalindrome(" "))
+    self.assertFalse(isPalindrome(" "))
+
+  def test_empty_string1(self):
+    self.assertFalse(isPalindrome(""))
 
   def test_valid_palindrome_tring(self):
     self.assertTrue(isPalindrome("madam&$was$it$a$car$or$a$cat$I$saw&madam&$"))
 
   def test_valid_palindrome_tring2(self):
     self.assertTrue(isPalindrome("racecar"))
+
+  def test_one_special_char(self):
+    self.assertFalse(isPalindrome("&"))
 
 if __name__ == '__main__':
   unittest.main()
